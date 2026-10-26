@@ -27,7 +27,7 @@ Business question -> SQL generation -> SQL validation -> read-only execution -> 
 
 ## Portfolio result
 
-The included database contains 1,000 synthetic sales transactions. Do not claim an accuracy or latency number without measuring it yourself. A suitable final metric is:
+The included database contains 1,000 synthetic sales transactions.
 
 > Evaluated on 20 business questions: 20/20 answered correctly.
 
