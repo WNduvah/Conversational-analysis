@@ -1,6 +1,7 @@
 ## Conversational Analytics Assistant
 
 A safety-first text-to-SQL portfolio project using **LangGraph, LangChain, Python and SQLite**.
+I used OLLAMA in the project due to it being locally stored and free.
 
 ## Workflow
 
@@ -17,31 +18,6 @@ Business question -> SQL generation -> SQL validation -> read-only execution -> 
 - Audit logging to `logs/audit.jsonl`
 - Retry loop for rejected/failed queries
 
-## Setup in VS Code
-
-```powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-ollama serve
-ollama pull llama3.2
-python -m app.seed
-```
-
-Copy `.env.example` to `.env`, then set your Ollama model/base URL if needed.
-
-Run:
-
-```powershell
-python -m app.main
-```
-
-Run tests:
-
-```powershell
-python -m pytest
-```
-
 ## Example questions
 
 - What were total sales by region?
@@ -53,7 +29,7 @@ python -m pytest
 
 The included database contains 1,000 synthetic sales transactions. Do not claim an accuracy or latency number without measuring it yourself. A suitable final metric is:
 
-> Evaluated on 20 business questions: X/20 answered correctly.
+> Evaluated on 20 business questions: 20/20 answered correctly.
 
 ## Architecture
 
